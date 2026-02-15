@@ -1,0 +1,23 @@
+{
+  "Common": {
+    "appName": "链接缩短器",
+    "signIn": "登录",
+    "signUp": "注册",
+    "dashboard": "仪表板",
+    "home": "首页"
+  },
+  "HomePage": {
+    "title": "要开始使用，请编辑 page.tsx 文件。",
+    "description": "正在寻找起点或更多说明？前往",
+    "templates": "模板",
+    "or": "或",
+    "learning": "学习中心",
+    "center": "。",
+    "deployNow": "立即部署",
+    "readDocs": "阅读文档"
+  },
+  "Dashboard": {
+    "title": "仪表板",
+    "welcome": "欢迎来到您的仪表板"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Common": {
+    "appName": "Link Shortener",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "dashboard": "Dashboard",
+    "home": "Home"
+  },
+  "HomePage": {
+    "title": "To get started, edit the page.tsx file.",
+    "description": "Looking for a starting point or more instructions? Head over to",
+    "templates": "Templates",
+    "or": "or the",
+    "learning": "Learning",
+    "center": "center.",
+    "deployNow": "Deploy now",
+    "readDocs": "Read our docs"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to your dashboard"
+  }
+}

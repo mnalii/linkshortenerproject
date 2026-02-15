@@ -1,0 +1,23 @@
+{
+  "Common": {
+    "appName": "Pemendek Link",
+    "signIn": "Masuk",
+    "signUp": "Daftar",
+    "dashboard": "Dasbor",
+    "home": "Beranda"
+  },
+  "HomePage": {
+    "title": "Untuk memulai, edit file page.tsx.",
+    "description": "Mencari titik awal atau instruksi lebih lanjut? Kunjungi",
+    "templates": "Templat",
+    "or": "atau",
+    "learning": "Pusat Pembelajaran",
+    "center": ".",
+    "deployNow": "Deploy sekarang",
+    "readDocs": "Baca dokumentasi kami"
+  },
+  "Dashboard": {
+    "title": "Dasbor",
+    "welcome": "Selamat datang di dasbor Anda"
+  }
+}

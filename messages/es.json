@@ -1,0 +1,23 @@
+{
+  "Common": {
+    "appName": "Acortador de Enlaces",
+    "signIn": "Iniciar Sesión",
+    "signUp": "Registrarse",
+    "dashboard": "Panel",
+    "home": "Inicio"
+  },
+  "HomePage": {
+    "title": "Para comenzar, edita el archivo page.tsx.",
+    "description": "¿Buscas un punto de partida o más instrucciones? Dirígete a",
+    "templates": "Plantillas",
+    "or": "o al",
+    "learning": "Centro de Aprendizaje",
+    "center": ".",
+    "deployNow": "Desplegar ahora",
+    "readDocs": "Lee nuestra documentación"
+  },
+  "Dashboard": {
+    "title": "Panel",
+    "welcome": "Bienvenido a tu panel"
+  }
+}
