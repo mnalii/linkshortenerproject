@@ -7,14 +7,46 @@
     "home": "Home"
   },
   "HomePage": {
-    "title": "To get started, edit the page.tsx file.",
-    "description": "Looking for a starting point or more instructions? Head over to",
-    "templates": "Templates",
-    "or": "or the",
-    "learning": "Learning",
-    "center": "center.",
-    "deployNow": "Deploy now",
-    "readDocs": "Read our docs"
+    "hero": {
+      "title": "Shorten Your Links,",
+      "titleHighlight": "Amplify Your Reach",
+      "description": "Create short, memorable links that are easy to share and track. Perfect for social media, marketing campaigns, and more.",
+      "ctaGetStarted": "Get Started Free",
+      "ctaLearnMore": "Learn More"
+    },
+    "features": {
+      "title": "Why Choose Our Link Shortener?",
+      "description": "Powerful features to help you manage and track your links",
+      "customLinks": {
+        "title": "Custom Short Links",
+        "description": "Create branded, memorable links with custom aliases"
+      },
+      "analytics": {
+        "title": "Detailed Analytics",
+        "description": "Track clicks, locations, and referrers in real-time"
+      },
+      "secure": {
+        "title": "Secure & Reliable",
+        "description": "Your links are safe with enterprise-grade security"
+      },
+      "qrCodes": {
+        "title": "QR Code Generation",
+        "description": "Generate QR codes for your shortened links instantly"
+      },
+      "bulkShortening": {
+        "title": "Bulk Shortening",
+        "description": "Shorten multiple links at once to save time"
+      },
+      "linkManagement": {
+        "title": "Link Management",
+        "description": "Organize, edit, and manage all your links in one place"
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Join thousands of users who trust our link shortener",
+      "button": "Create Your First Link"
+    }
   },
   "Dashboard": {
     "title": "Dashboard",
