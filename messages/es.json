@@ -1,20 +1,52 @@
 {
   "Common": {
-    "appName": "Acortador de Enlaces",
+    "appName": "Link Shortener",
     "signIn": "Iniciar Sesión",
     "signUp": "Registrarse",
     "dashboard": "Panel",
     "home": "Inicio"
   },
   "HomePage": {
-    "title": "Para comenzar, edita el archivo page.tsx.",
-    "description": "¿Buscas un punto de partida o más instrucciones? Dirígete a",
-    "templates": "Plantillas",
-    "or": "o al",
-    "learning": "Centro de Aprendizaje",
-    "center": ".",
-    "deployNow": "Desplegar ahora",
-    "readDocs": "Lee nuestra documentación"
+    "hero": {
+      "title": "Acorta tus Enlaces,",
+      "titleHighlight": "Amplifica tu Alcance",
+      "description": "Crea enlaces cortos y memorables que son fáciles de compartir y rastrear. Perfecto para redes sociales, campañas de marketing y más.",
+      "ctaGetStarted": "Comenzar Gratis",
+      "ctaLearnMore": "Saber Más"
+    },
+    "features": {
+      "title": "¿Por Qué Elegir Nuestro Acortador de Enlaces?",
+      "description": "Funciones potentes para ayudarte a gestionar y rastrear tus enlaces",
+      "customLinks": {
+        "title": "Enlaces Cortos Personalizados",
+        "description": "Crea enlaces memorables con alias personalizados"
+      },
+      "analytics": {
+        "title": "Análisis Detallados",
+        "description": "Rastrea clics, ubicaciones y referencias en tiempo real"
+      },
+      "secure": {
+        "title": "Seguro y Confiable",
+        "description": "Tus enlaces están seguros con seguridad de nivel empresarial"
+      },
+      "qrCodes": {
+        "title": "Generación de Códigos QR",
+        "description": "Genera códigos QR para tus enlaces acortados al instante"
+      },
+      "bulkShortening": {
+        "title": "Acortamiento Masivo",
+        "description": "Acorta múltiples enlaces a la vez para ahorrar tiempo"
+      },
+      "linkManagement": {
+        "title": "Gestión de Enlaces",
+        "description": "Organiza, edita y gestiona todos tus enlaces en un solo lugar"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "description": "Únete a miles de usuarios que confían en nuestro acortador de enlaces",
+      "button": "Crea tu Primer Enlace"
+    }
   },
   "Dashboard": {
     "title": "Panel",

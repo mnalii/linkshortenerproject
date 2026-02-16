@@ -1,20 +1,52 @@
 {
   "Common": {
-    "appName": "Pemendek Link",
+    "appName": "Link Shortener",
     "signIn": "Masuk",
     "signUp": "Daftar",
     "dashboard": "Dasbor",
     "home": "Beranda"
   },
   "HomePage": {
-    "title": "Untuk memulai, edit file page.tsx.",
-    "description": "Mencari titik awal atau instruksi lebih lanjut? Kunjungi",
-    "templates": "Templat",
-    "or": "atau",
-    "learning": "Pusat Pembelajaran",
-    "center": ".",
-    "deployNow": "Deploy sekarang",
-    "readDocs": "Baca dokumentasi kami"
+    "hero": {
+      "title": "Perpendek Link Anda,",
+      "titleHighlight": "Perluas Jangkauan Anda",
+      "description": "Buat link pendek yang mudah diingat yang mudah dibagikan dan dilacak. Sempurna untuk media sosial, kampanye pemasaran, dan lainnya.",
+      "ctaGetStarted": "Mulai Gratis",
+      "ctaLearnMore": "Pelajari Lebih Lanjut"
+    },
+    "features": {
+      "title": "Mengapa Memilih Pemendek Link Kami?",
+      "description": "Fitur yang kuat untuk membantu Anda mengelola dan melacak link Anda",
+      "customLinks": {
+        "title": "Link Pendek Kustom",
+        "description": "Buat link bermerek yang mudah diingat dengan alias kustom"
+      },
+      "analytics": {
+        "title": "Analitik Terperinci",
+        "description": "Lacak klik, lokasi, dan perujuk secara real-time"
+      },
+      "secure": {
+        "title": "Aman & Andal",
+        "description": "Link Anda aman dengan keamanan tingkat perusahaan"
+      },
+      "qrCodes": {
+        "title": "Pembuatan Kode QR",
+        "description": "Buat kode QR untuk link yang diperpendek secara instan"
+      },
+      "bulkShortening": {
+        "title": "Pemendekan Massal",
+        "description": "Perpendek beberapa link sekaligus untuk menghemat waktu"
+      },
+      "linkManagement": {
+        "title": "Manajemen Link",
+        "description": "Atur, edit, dan kelola semua link Anda di satu tempat"
+      }
+    },
+    "cta": {
+      "title": "Siap untuk Memulai?",
+      "description": "Bergabunglah dengan ribuan pengguna yang mempercayai pemendek link kami",
+      "button": "Buat Link Pertama Anda"
+    }
   },
   "Dashboard": {
     "title": "Dasbor",

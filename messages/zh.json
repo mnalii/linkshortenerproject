@@ -1,20 +1,52 @@
 {
   "Common": {
-    "appName": "链接缩短器",
+    "appName": "Link Shortener",
     "signIn": "登录",
     "signUp": "注册",
     "dashboard": "仪表板",
     "home": "首页"
   },
   "HomePage": {
-    "title": "要开始使用，请编辑 page.tsx 文件。",
-    "description": "正在寻找起点或更多说明？前往",
-    "templates": "模板",
-    "or": "或",
-    "learning": "学习中心",
-    "center": "。",
-    "deployNow": "立即部署",
-    "readDocs": "阅读文档"
+    "hero": {
+      "title": "缩短您的链接，",
+      "titleHighlight": "扩大您的影响力",
+      "description": "创建易于分享和跟踪的简短、易记的链接。非常适合社交媒体、营销活动等。",
+      "ctaGetStarted": "免费开始",
+      "ctaLearnMore": "了解更多"
+    },
+    "features": {
+      "title": "为什么选择我们的链接缩短器？",
+      "description": "强大的功能帮助您管理和跟踪链接",
+      "customLinks": {
+        "title": "自定义短链接",
+        "description": "创建带有自定义别名的品牌化、易记的链接"
+      },
+      "analytics": {
+        "title": "详细分析",
+        "description": "实时跟踪点击量、位置和来源"
+      },
+      "secure": {
+        "title": "安全可靠",
+        "description": "企业级安全保护您的链接"
+      },
+      "qrCodes": {
+        "title": "二维码生成",
+        "description": "即时为缩短的链接生成二维码"
+      },
+      "bulkShortening": {
+        "title": "批量缩短",
+        "description": "一次缩短多个链接以节省时间"
+      },
+      "linkManagement": {
+        "title": "链接管理",
+        "description": "在一个地方组织、编辑和管理所有链接"
+      }
+    },
+    "cta": {
+      "title": "准备开始了吗？",
+      "description": "加入数千名信任我们链接缩短器的用户",
+      "button": "创建您的第一个链接"
+    }
   },
   "Dashboard": {
     "title": "仪表板",
