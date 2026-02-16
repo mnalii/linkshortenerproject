@@ -87,14 +87,6 @@ export default async function Home({
                 {t("hero.ctaGetStarted")}
               </Button>
             </SignUpButton>
-            <Button
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto"
-              asChild
-            >
-              <a href="#features">{t("hero.ctaLearnMore")}</a>
-            </Button>
           </div>
         </div>
       </section>
@@ -141,9 +133,7 @@ export default async function Home({
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
             {t("cta.title")}
           </h2>
-          <p className="mb-8 text-lg text-blue-50">
-            {t("cta.description")}
-          </p>
+          <p className="mb-8 text-lg text-blue-50">{t("cta.description")}</p>
           <SignUpButton mode="modal">
             <Button size="lg" variant="secondary" className="w-full sm:w-auto">
               {t("cta.button")}
