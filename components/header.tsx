@@ -60,16 +60,10 @@ export function Header() {
           </div>
         </div>
         <SignedOut>
-          <SignInButton 
-            mode="modal"
-            forceRedirectUrl={`/${locale}/dashboard`}
-          >
+          <SignInButton mode="modal" forceRedirectUrl={`/${locale}/dashboard`}>
             <Button variant="ghost">{t("signIn")}</Button>
           </SignInButton>
-          <SignUpButton 
-            mode="modal"
-            forceRedirectUrl={`/${locale}/dashboard`}
-          >
+          <SignUpButton mode="modal" forceRedirectUrl={`/${locale}/dashboard`}>
             <Button>{t("signUp")}</Button>
           </SignUpButton>
         </SignedOut>
