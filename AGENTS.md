@@ -34,6 +34,15 @@ This is a **Next.js 16** link shortener application with the following tech stac
 4. **Accessibility**: Follow WCAG 2.1 AA standards
 5. **Code Quality**: Clean, maintainable, and well-documented code
 
+## ⚠️ CRITICAL: Routing and Middleware ⚠️
+
+**NEVER use `middleware.ts` in this project.**
+
+- `middleware.ts` is **DEPRECATED** in Next.js 16 and later versions
+- This project uses **`proxy.ts`** instead for all middleware functionality
+- All route protection, authentication middleware, and internationalization routing logic belongs in `proxy.ts`
+- Do NOT create or suggest creating a `middleware.ts` file under any circumstances
+
 ## Quick Reference
 
 ### File Structure
@@ -84,5 +93,5 @@ When working on any task, you MUST first read the appropriate documentation:
 
 ---
 
-**Last Updated**: February 16, 2026  
+**Last Updated**: February 17, 2026  
 **Project Version**: 0.1.0
