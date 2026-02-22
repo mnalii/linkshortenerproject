@@ -1,3 +1,7 @@
+---
+description: Read this before implementing or modifying internationalization (i18n) in the project.
+---
+
 # Internationalization (i18n) Guidelines
 
 ## Overview

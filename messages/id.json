@@ -50,6 +50,48 @@
   },
   "Dashboard": {
     "title": "Dasbor",
-    "welcome": "Selamat datang di dasbor Anda"
+    "welcome": "Selamat datang di dasbor Anda",
+    "myLinks": "Link Saya",
+    "noLinks": "Anda belum membuat link apapun.",
+    "createFirst": "Buat link pertama Anda untuk memulai!",
+    "table": {
+      "shortCode": "Kode Pendek",
+      "url": "URL Asli",
+      "clicks": "Klik",
+      "createdAt": "Dibuat Pada",
+      "actions": "Tindakan",
+      "edit": "Edit",
+      "delete": "Hapus"
+    },
+    "createLink": {
+      "button": "Buat Link",
+      "title": "Buat Link Pendek",
+      "description": "Masukkan URL untuk membuat link yang diperpendek. Opsional, berikan kode pendek kustom.",
+      "urlLabel": "URL",
+      "urlDescription": "Masukkan URL yang ingin Anda perpendek",
+      "shortCodeLabel": "Kode Pendek Kustom (Opsional)",
+      "shortCodeDescription": "Biarkan kosong untuk membuat kode acak",
+      "cancel": "Batal",
+      "create": "Buat Link",
+      "creating": "Membuat..."
+    },
+    "editLink": {
+      "title": "Edit Link",
+      "description": "Perbarui URL atau kode pendek untuk link ini.",
+      "urlLabel": "URL",
+      "urlDescription": "Masukkan URL baru",
+      "shortCodeLabel": "Kode Pendek",
+      "shortCodeDescription": "Perbarui kode pendek untuk link ini",
+      "cancel": "Batal",
+      "save": "Simpan Perubahan",
+      "saving": "Menyimpan..."
+    },
+    "deleteLink": {
+      "title": "Apakah Anda yakin?",
+      "description": "Ini akan menghapus link '{shortCode}' secara permanen. Tindakan ini tidak dapat dibatalkan.",
+      "cancel": "Batal",
+      "delete": "Hapus",
+      "deleting": "Menghapus..."
+    }
   }
 }
