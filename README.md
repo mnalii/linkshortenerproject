@@ -24,30 +24,30 @@ This project was built by **vibe coding** using [GitHub Copilot](https://github.
 
 A custom Copilot agent is defined in `.github/agents/` to automate the creation of instruction files:
 
-| Agent | Description |
-|---|---|
+| Agent                            | Description                                                                                                                                                                                                             |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `instruction-generator.agent.md` | Reads architecture details provided by the developer and generates a correctly formatted `.instructions.md` file, complete with frontmatter and concise rules. Equipped with `read`, `edit`, `search`, and `web` tools. |
 
 ### Instructions
 
 Five domain-specific instruction files in `.github/instructions/` are automatically applied by Copilot when working in relevant areas of the codebase. Each file tells Copilot the rules, patterns, and anti-patterns for that layer:
 
-| File | Scope | Key Rules |
-|---|---|---|
-| `authentication.instructions.md` | Auth | Clerk-only; never implement custom auth; Sign In / Sign Up must use modals; protect `/dashboard` with `auth()`; redirect authenticated users away from the homepage |
-| `data-fetching.instructions.md` | Data layer | Always use Server Components for fetching; never fetch in Client Components; all DB access must go through `/data` helper functions using Drizzle ORM |
-| `internationalization.instructions.md` | i18n | No hard-coded UI strings; use `next-intl` with `getTranslations()` (server) and `useTranslations()` (client); keep all five locale files in sync |
-| `server-actions.instructions.md` | Mutations | All writes via Server Actions in colocated `actions.ts` files; mandatory Zod validation; auth check via `auth()` on every action; never throw — always return `{ success, data \| error }`; delegate DB calls to `/data` helpers |
-| `ui-components.instructions.md` | UI | shadcn/ui exclusively; never write custom button/input/dialog components; install missing components with `npx shadcn@latest add`; customise via `className` and `variant` props only |
+| File                                   | Scope      | Key Rules                                                                                                                                                                                                                        |
+| -------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `authentication.instructions.md`       | Auth       | Clerk-only; never implement custom auth; Sign In / Sign Up must use modals; protect `/dashboard` with `auth()`; redirect authenticated users away from the homepage                                                              |
+| `data-fetching.instructions.md`        | Data layer | Always use Server Components for fetching; never fetch in Client Components; all DB access must go through `/data` helper functions using Drizzle ORM                                                                            |
+| `internationalization.instructions.md` | i18n       | No hard-coded UI strings; use `next-intl` with `getTranslations()` (server) and `useTranslations()` (client); keep all five locale files in sync                                                                                 |
+| `server-actions.instructions.md`       | Mutations  | All writes via Server Actions in colocated `actions.ts` files; mandatory Zod validation; auth check via `auth()` on every action; never throw — always return `{ success, data \| error }`; delegate DB calls to `/data` helpers |
+| `ui-components.instructions.md`        | UI         | shadcn/ui exclusively; never write custom button/input/dialog components; install missing components with `npx shadcn@latest add`; customise via `className` and `variant` props only                                            |
 
 ### Prompts
 
 Two reusable prompt files in `.github/prompts/` let you generate new Copilot configuration files on demand:
 
-| File | What it does |
-|---|---|
+| File                                    | What it does                                                                                                                                                                                                       |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `create-copilot-instructions.prompt.md` | Takes architecture or coding-standard details and scaffolds a new `.instructions.md` file in `.github/instructions/` with proper frontmatter and concise rules — delegates to the **Instructions Generator** agent |
-| `create-instructions.prompt.md` | Generates a new agent-instructions `.md` file and automatically updates `AGENTS.md` to reference it — also delegates to the **Instructions Generator** agent |
+| `create-instructions.prompt.md`         | Generates a new agent-instructions `.md` file and automatically updates `AGENTS.md` to reference it — also delegates to the **Instructions Generator** agent                                                       |
 
 ### AGENTS.md
 
@@ -96,18 +96,18 @@ The root [`AGENTS.md`](AGENTS.md) acts as the master context file for all AI age
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | [Next.js 16.1.6](https://nextjs.org) (App Router, React 19) |
-| Language | TypeScript 5 — strict mode |
-| Styling | Tailwind CSS v4 + tw-animate-css |
-| Authentication | [Clerk](https://clerk.com) (`@clerk/nextjs` v6) |
-| Database | [Neon](https://neon.tech) PostgreSQL (serverless) |
-| ORM | [Drizzle ORM](https://orm.drizzle.team) v0.45 |
-| Internationalization | [next-intl](https://next-intl.dev) v4 |
-| UI Components | [Radix UI](https://www.radix-ui.com) + [shadcn/ui](https://ui.shadcn.com) |
-| Icons | [Lucide React](https://lucide.dev) |
-| Forms | react-hook-form + Zod + @hookform/resolvers |
+| Layer                | Technology                                                                |
+| -------------------- | ------------------------------------------------------------------------- |
+| Framework            | [Next.js 16.1.6](https://nextjs.org) (App Router, React 19)               |
+| Language             | TypeScript 5 — strict mode                                                |
+| Styling              | Tailwind CSS v4 + tw-animate-css                                          |
+| Authentication       | [Clerk](https://clerk.com) (`@clerk/nextjs` v6)                           |
+| Database             | [Neon](https://neon.tech) PostgreSQL (serverless)                         |
+| ORM                  | [Drizzle ORM](https://orm.drizzle.team) v0.45                             |
+| Internationalization | [next-intl](https://next-intl.dev) v4                                     |
+| UI Components        | [Radix UI](https://www.radix-ui.com) + [shadcn/ui](https://ui.shadcn.com) |
+| Icons                | [Lucide React](https://lucide.dev)                                        |
+| Forms                | react-hook-form + Zod + @hookform/resolvers                               |
 
 ---
 
@@ -168,13 +168,13 @@ Open [http://localhost:3000](http://localhost:3000) to see the app. It redirects
 
 Create a `.env.local` file at the project root with the following keys:
 
-| Variable | Description | Where to get it |
-|---|---|---|
-| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clerk publishable key (frontend) | [Clerk Dashboard](https://dashboard.clerk.com) → API Keys |
-| `CLERK_SECRET_KEY` | Clerk secret key (server-side) | [Clerk Dashboard](https://dashboard.clerk.com) → API Keys |
-| `NEXT_PUBLIC_CLERK_SIGN_IN_URL` | Sign-in redirect URL | Set to `/en/sign-in` or leave modal-based (omit for modals) |
-| `NEXT_PUBLIC_CLERK_SIGN_UP_URL` | Sign-up redirect URL | Set to `/en/sign-up` or leave modal-based (omit for modals) |
-| `DATABASE_URL` | Neon PostgreSQL connection string | [Neon Console](https://console.neon.tech) → your project → Connection Details |
+| Variable                            | Description                       | Where to get it                                                               |
+| ----------------------------------- | --------------------------------- | ----------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clerk publishable key (frontend)  | [Clerk Dashboard](https://dashboard.clerk.com) → API Keys                     |
+| `CLERK_SECRET_KEY`                  | Clerk secret key (server-side)    | [Clerk Dashboard](https://dashboard.clerk.com) → API Keys                     |
+| `NEXT_PUBLIC_CLERK_SIGN_IN_URL`     | Sign-in redirect URL              | Set to `/en/sign-in` or leave modal-based (omit for modals)                   |
+| `NEXT_PUBLIC_CLERK_SIGN_UP_URL`     | Sign-up redirect URL              | Set to `/en/sign-up` or leave modal-based (omit for modals)                   |
+| `DATABASE_URL`                      | Neon PostgreSQL connection string | [Neon Console](https://console.neon.tech) → your project → Connection Details |
 
 **Example `.env.local`:**
 
@@ -233,13 +233,13 @@ linkshortenerproject/
 
 The app supports five locales out of the box:
 
-| Code | Language |
-|---|---|
+| Code | Language          |
+| ---- | ----------------- |
 | `en` | English (default) |
-| `es` | Español |
-| `zh` | 中文 |
-| `th` | ภาษาไทย |
-| `id` | Bahasa Indonesia |
+| `es` | Español           |
+| `zh` | 中文              |
+| `th` | ภาษาไทย           |
+| `id` | Bahasa Indonesia  |
 
 All routes are prefixed with the locale: `/{locale}/dashboard`, `/{locale}/`, etc. Visiting `/` redirects to `/en`. Users can switch languages from the header dropdown — the locale is swapped in the URL without a full page reload.
 
@@ -249,16 +249,16 @@ For full i18n implementation details, see [I18N_README.md](I18N_README.md).
 
 ## Available Scripts
 
-| Script | Description |
-|---|---|
-| `npm run dev` | Start the development server at `http://localhost:3000` |
-| `npm run build` | Build for production |
-| `npm run start` | Start the production server |
-| `npm run lint` | Run ESLint across the project |
-| `npm run db:generate` | Generate Drizzle migration files from the schema |
-| `npm run db:migrate` | Apply pending migrations to the database |
-| `npm run db:push` | Push schema changes directly (dev shortcut, no migration files) |
-| `npm run db:studio` | Open Drizzle Studio — a GUI for browsing your database |
+| Script                | Description                                                     |
+| --------------------- | --------------------------------------------------------------- |
+| `npm run dev`         | Start the development server at `http://localhost:3000`         |
+| `npm run build`       | Build for production                                            |
+| `npm run start`       | Start the production server                                     |
+| `npm run lint`        | Run ESLint across the project                                   |
+| `npm run db:generate` | Generate Drizzle migration files from the schema                |
+| `npm run db:migrate`  | Apply pending migrations to the database                        |
+| `npm run db:push`     | Push schema changes directly (dev shortcut, no migration files) |
+| `npm run db:studio`   | Open Drizzle Studio — a GUI for browsing your database          |
 
 ---
 
@@ -280,5 +280,3 @@ When a user visits `/{shortCode}` (actually `/r/{shortCode}`), the Next.js Route
 ## License
 
 This project is for personal and educational use.
-
-
