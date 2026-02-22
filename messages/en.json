@@ -50,6 +50,48 @@
   },
   "Dashboard": {
     "title": "Dashboard",
-    "welcome": "Welcome to your dashboard"
+    "welcome": "Welcome to your dashboard",
+    "myLinks": "My Links",
+    "noLinks": "You haven't created any links yet.",
+    "createFirst": "Create your first link to get started!",
+    "table": {
+      "shortCode": "Short Code",
+      "url": "Original URL",
+      "clicks": "Clicks",
+      "createdAt": "Created At",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "createLink": {
+      "button": "Create Link",
+      "title": "Create Short Link",
+      "description": "Enter a URL to create a shortened link. Optionally, provide a custom short code.",
+      "urlLabel": "URL",
+      "urlDescription": "Enter the URL you want to shorten",
+      "shortCodeLabel": "Custom Short Code (Optional)",
+      "shortCodeDescription": "Leave empty to generate a random code",
+      "cancel": "Cancel",
+      "create": "Create Link",
+      "creating": "Creating..."
+    },
+    "editLink": {
+      "title": "Edit Link",
+      "description": "Update the URL or short code for this link.",
+      "urlLabel": "URL",
+      "urlDescription": "Enter the new URL",
+      "shortCodeLabel": "Short Code",
+      "shortCodeDescription": "Update the short code for this link",
+      "cancel": "Cancel",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "deleteLink": {
+      "title": "Are you sure?",
+      "description": "This will permanently delete the link '{shortCode}'. This action cannot be undone.",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "deleting": "Deleting..."
+    }
   }
 }

@@ -1,15 +1,5 @@
 # Agent Instructions - Link Shortener Project
 
-## ⚠️ CRITICAL REQUIREMENT ⚠️
-
-**BEFORE GENERATING ANY CODE, YOU MUST:**
-
-1. **READ the relevant documentation files in `/docs/agents/`** for the specific area you're working on
-2. **FOLLOW the guidelines** specified in those files
-3. **VERIFY your approach** aligns with the documented standards
-
-**This is NOT optional. Every code generation task requires consulting the appropriate documentation first.**
-
 ---
 
 This document serves as the master guide for AI coding agents working on this Next.js-based link shortener project. All agents must follow these instructions to ensure code quality, consistency, and maintainability.
@@ -53,7 +43,6 @@ This is a **Next.js 16** link shortener application with the following tech stac
 /lib                  # Utility functions and shared logic
 /db                   # Database schema and queries
 /public               # Static assets
-/docs                 # Documentation including agent instructions
 ```
 
 ### Path Aliases
@@ -70,19 +59,6 @@ npm run lint         # Run ESLint
 ```
 
 ## Getting Help
-
-**⚠️ MANDATORY FIRST STEP: Always consult the relevant documentation file BEFORE writing any code ⚠️**
-
-When working on any task, you MUST first read the appropriate documentation:
-
-- **Authentication**: READ [Authentication Guidelines](./docs/agents/authentication.md) FIRST
-- **UI Components**: READ [UI Components Guidelines](./docs/agents/ui-components.md) FIRST
-- **Internationalization**: READ [Internationalization Guidelines](./docs/agents/internationalization.md) FIRST
-- **Coding standards**: READ [LLM Coding Standards](./docs/agents/llm-coding-standards.md) FIRST
-- **Making changes**: READ [Migration Guidelines](./docs/agents/migration-guideline.md) FIRST
-- **Testing & bugs**: READ [Patch & Testing](./docs/agents/patch-and-testing.md) FIRST
-
-**DO NOT skip this step. DO NOT generate code without consulting these files. This is a strict requirement.**
 
 ## Version Control
 

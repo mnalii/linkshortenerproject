@@ -7,6 +7,7 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/routing";
 import { notFound } from "next/navigation";
 import { Header } from "../../components/header";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -57,8 +58,10 @@ export default async function LocaleLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <NextIntlClientProvider messages={messages}>
-            <Header />
-            {children}
+            <TooltipProvider>
+              <Header />
+              {children}
+            </TooltipProvider>
           </NextIntlClientProvider>
         </body>
       </html>

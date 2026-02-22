@@ -50,6 +50,48 @@
   },
   "Dashboard": {
     "title": "仪表板",
-    "welcome": "欢迎来到您的仪表板"
+    "welcome": "欢迎来到您的仪表板",
+    "myLinks": "我的链接",
+    "noLinks": "您还没有创建任何链接。",
+    "createFirst": "创建您的第一个链接以开始使用！",
+    "table": {
+      "shortCode": "短代码",
+      "url": "原始URL",
+      "clicks": "点击数",
+      "createdAt": "创建时间",
+      "actions": "操作",
+      "edit": "编辑",
+      "delete": "删除"
+    },
+    "createLink": {
+      "button": "创建链接",
+      "title": "创建短链接",
+      "description": "输入URL以创建缩短的链接。可选择提供自定义短代码。",
+      "urlLabel": "URL",
+      "urlDescription": "输入您要缩短的URL",
+      "shortCodeLabel": "自定义短代码（可选）",
+      "shortCodeDescription": "留空以生成随机代码",
+      "cancel": "取消",
+      "create": "创建链接",
+      "creating": "创建中..."
+    },
+    "editLink": {
+      "title": "编辑链接",
+      "description": "更新此链接的URL或短代码。",
+      "urlLabel": "URL",
+      "urlDescription": "输入新的URL",
+      "shortCodeLabel": "短代码",
+      "shortCodeDescription": "更新此链接的短代码",
+      "cancel": "取消",
+      "save": "保存更改",
+      "saving": "保存中..."
+    },
+    "deleteLink": {
+      "title": "您确定吗？",
+      "description": "这将永久删除链接'{shortCode}'。此操作无法撤消。",
+      "cancel": "取消",
+      "delete": "删除",
+      "deleting": "删除中..."
+    }
   }
 }

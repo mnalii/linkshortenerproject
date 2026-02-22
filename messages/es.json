@@ -50,6 +50,48 @@
   },
   "Dashboard": {
     "title": "Panel",
-    "welcome": "Bienvenido a tu panel"
+    "welcome": "Bienvenido a tu panel",
+    "myLinks": "Mis Enlaces",
+    "noLinks": "Aún no has creado ningún enlace.",
+    "createFirst": "¡Crea tu primer enlace para comenzar!",
+    "table": {
+      "shortCode": "Código Corto",
+      "url": "URL Original",
+      "clicks": "Clics",
+      "createdAt": "Creado El",
+      "actions": "Acciones",
+      "edit": "Editar",
+      "delete": "Eliminar"
+    },
+    "createLink": {
+      "button": "Crear Enlace",
+      "title": "Crear Enlace Corto",
+      "description": "Ingresa una URL para crear un enlace acortado. Opcionalmente, proporciona un código corto personalizado.",
+      "urlLabel": "URL",
+      "urlDescription": "Ingresa la URL que deseas acortar",
+      "shortCodeLabel": "Código Corto Personalizado (Opcional)",
+      "shortCodeDescription": "Dejar vacío para generar un código aleatorio",
+      "cancel": "Cancelar",
+      "create": "Crear Enlace",
+      "creating": "Creando..."
+    },
+    "editLink": {
+      "title": "Editar Enlace",
+      "description": "Actualiza la URL o el código corto de este enlace.",
+      "urlLabel": "URL",
+      "urlDescription": "Ingresa la nueva URL",
+      "shortCodeLabel": "Código Corto",
+      "shortCodeDescription": "Actualiza el código corto de este enlace",
+      "cancel": "Cancelar",
+      "save": "Guardar Cambios",
+      "saving": "Guardando..."
+    },
+    "deleteLink": {
+      "title": "¿Estás seguro?",
+      "description": "Esto eliminará permanentemente el enlace '{shortCode}'. Esta acción no se puede deshacer.",
+      "cancel": "Cancelar",
+      "delete": "Eliminar",
+      "deleting": "Eliminando..."
+    }
   }
 }

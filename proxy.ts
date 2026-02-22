@@ -1,12 +1,19 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 import createIntlMiddleware from "next-intl/middleware";
+import { NextResponse } from "next/server";
 import { routing } from "./routing";
 
 const intlMiddleware = createIntlMiddleware(routing);
 
 const isProtectedRoute = createRouteMatcher(["/:locale/dashboard(.*)"]);
+const isRedirectRoute = createRouteMatcher(["/r/(.*)"]);
 
 export default clerkMiddleware(async (auth, req) => {
+  // Skip i18n middleware for redirect routes
+  if (isRedirectRoute(req)) {
+    return NextResponse.next();
+  }
+
   if (isProtectedRoute(req)) {
     await auth.protect();
   }
